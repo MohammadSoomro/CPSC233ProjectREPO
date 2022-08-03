@@ -15,11 +15,19 @@
             <Insets top="10.0" />
          </VBox.margin>
       </TextField>
-      <Button alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="18.0" prefWidth="150.0" text="Press to Choose team" />
-      <TextField prefHeight="18.0" prefWidth="307.0" text="AVAILABLE TEAMS: " />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chelsea FC" wrappingWidth="111.13671875" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Manchester United" wrappingWidth="127.13671875" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FC Barcelona" wrappingWidth="102.13671875" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Real Madrid FC" wrappingWidth="103.13671875" />
+      <MenuButton mnemonicParsing="false" text="League select P1">
+        <items>
+          <MenuItem mnemonicParsing="false" text="La Liga" />
+          <MenuItem mnemonicParsing="false" text="Bundesliga" />
+            <MenuItem mnemonicParsing="false" text="Premier league" />
+        </items>
+      </MenuButton>
+      <MenuButton mnemonicParsing="false" text="League select P1" translateX="185.0" translateY="-25.0">
+         <items>
+            <MenuItem mnemonicParsing="false" text="La Liga" />
+            <MenuItem mnemonicParsing="false" text="Bundesliga" />
+            <MenuItem mnemonicParsing="false" text="Premier league" />
+         </items>
+      </MenuButton>
    </children>
 </VBox>
