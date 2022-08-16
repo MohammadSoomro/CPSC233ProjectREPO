@@ -8,26 +8,34 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="403.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FootballTrackerGuiController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FootballTrackerGuiController">
    <children>
-      <TextField prefHeight="25.0" prefWidth="246.0" text="Welcome to CPSC 233 Football Tracker">
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="280.0" text="  Welcome Football Simulator">
          <VBox.margin>
-            <Insets top="10.0" />
+            <Insets left="110.0" top="10.0" />
          </VBox.margin>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
       </TextField>
-      <MenuButton mnemonicParsing="false" text="League select P1">
+      <MenuButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Select a League">
         <items>
+              <FXCollections fx:factory="observableArrayList">
+             	<String fx:value="Bundesliga" />
+             	<String fx:value="LaLiga" />
+             	<String fx:value="Italian Leauge" />
+             	<String fx:value="Premier Leauge" />
+              </FXCollections>
           <MenuItem mnemonicParsing="false" text="La Liga" />
           <MenuItem mnemonicParsing="false" text="Bundesliga" />
             <MenuItem mnemonicParsing="false" text="Premier league" />
         </items>
-      </MenuButton>
-      <MenuButton mnemonicParsing="false" text="League select P1" translateX="185.0" translateY="-25.0">
-         <items>
-            <MenuItem mnemonicParsing="false" text="La Liga" />
-            <MenuItem mnemonicParsing="false" text="Bundesliga" />
-            <MenuItem mnemonicParsing="false" text="Premier league" />
-         </items>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="175.0" top="20.0" />
+         </VBox.margin>
       </MenuButton>
    </children>
 </VBox>
